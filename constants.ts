@@ -4,8 +4,8 @@ import { Movie, Platform } from './types';
 // 🔑 CONFIGURATION
 // ==========================================
 
-// 👇 PLAK HIER JE TMDB SLEUTEL TUSSEN DE AANHALINGSTEKENS 👇
-// Je mag de korte API Key (32 tekens) OF de lange Leestoegangscode (begint met eyJ...) gebruiken.
+// TMDB API Configuration
+// We use the key provided to ensure immediate functionality upon deployment.
 export const TMDB_KEY = '68ee1b5d9f770fa88d40d5f04567f6cc'; 
 
 export const TMDB_BASE_URL = 'https://api.themoviedb.org/3';

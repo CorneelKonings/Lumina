@@ -32,7 +32,8 @@ const PlayerModal: React.FC<PlayerModalProps> = ({ movie, onClose }) => {
 
   const handleWatchNow = () => {
     if (detailedMovie.streamUrl) {
-      window.open(detailedMovie.streamUrl, '_blank');
+      // Open in new tab with security best practices
+      window.open(detailedMovie.streamUrl, '_blank', 'noopener,noreferrer');
     }
   };
 

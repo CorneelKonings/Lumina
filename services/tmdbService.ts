@@ -30,9 +30,9 @@ const optimizeStreamUrl = (homepage: string | null, platform: Platform, title: s
     // 1. Check if we have a specific homepage link from TMDB
     if (homepage) {
         // Netflix Specific Logic
-        // Checks for 'netflix.com/title/12345' and converts to 'netflix.com/watch/12345'
+        // Regex looks for /title/ followed by digits and replaces it with /watch/ followed by those digits
         if (platform === Platform.NETFLIX && homepage.includes('/title/')) {
-            return homepage.replace('/title/', '/watch/');
+            return homepage.replace(/\/title\/(\d+)/, '/watch/$1');
         }
         
         // Disney+ Specific Logic
