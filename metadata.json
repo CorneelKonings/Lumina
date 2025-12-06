@@ -1,0 +1,5 @@
+{
+  "name": "Lumina Stream Hub",
+  "description": "A minimalist, black-and-white 'liquid glass' streaming hub aggregating content from Netflix, Disney+, YouTube, and more with AI-powered recommendations and integrated playback interface.",
+  "requestFramePermissions": []
+}
